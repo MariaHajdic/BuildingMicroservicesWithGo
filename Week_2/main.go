@@ -28,7 +28,7 @@ func main() {
 	sm.Handle("/", hh)
 	sm.Handle("/goodbye", gh)
 
-	/* Creating new server */
+	/* Creating a new server */
 	s := http.Server{
 		Addr:         *bindAddress,      // configuring bind address
 		Handler:      sm,                // setting the default handler
