@@ -9,11 +9,10 @@ import (
 	"os/signal"
 	"time"
 
-	// "github.com/nicholasjackson/building-microservices-youtube/product-api/handlers"
 	"github.com/nicholasjackson/env"
 )
 
-var bindAddress = env.String("BIND_ADDRESS", false, ":9080", "Bind address to the server")
+var bindAddress = env.String("BIND_ADDRESS", false, ":9090", "Bind address to the server")
 
 func main() {
 	env.Parse()
